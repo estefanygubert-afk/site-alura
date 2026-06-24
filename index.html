@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reclamações da Merenda Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Reclamações da Merenda Escolar</h1>
+    <p>Espaço para alunos enviarem opiniões sobre a comida da escola</p>
+  </header>
+
+  <main class="container">
+
+    <section class="form-section">
+      <h2>Enviar Reclamação</h2>
+
+      <form id="complaintForm">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+
+        <select id="categoria" required>
+          <option value="">Selecione o problema</option>
+          <option>Comida fria</option>
+          <option>Pouca quantidade</option>
+          <option>Sem sabor</option>
+          <option>Comida estragada</option>
+          <option>Outro</option>
+        </select>
+
+        <textarea id="mensagem" placeholder="Descreva sua reclamação..." required></textarea>
+
+        <button type="submit">Enviar Reclamação</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Reclamações Enviadas</h2>
+      <div id="complaintsList"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Projeto Escolar © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
